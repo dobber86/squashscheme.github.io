@@ -1,0 +1,222 @@
+html,
+body {
+	background-color: rgb(255,204,153);
+	font-family: Arial;
+	font-size: 14px;
+	height: 100%;
+	margin: 0;
+}
+
+header,
+footer {
+	background-color: rgb(255,128,0);
+	color: white;
+	text-align: center;
+}
+
+header {
+	height: 70px;
+	padding: 10px;
+}
+
+footer {
+	height: 50px;
+	padding: 10px;
+}
+
+footer a {
+	height: 60px;
+	line-height: 60px;
+	color: #204156;
+	text-decoration: none;
+}
+
+p,
+a {
+	
+}
+
+h2 {
+	background-color: rgb(240,240,240);
+	border: 2px solid black;
+	border-radius: 5px;
+	height: 30px;
+	padding: 10px;
+	position: relative;
+	left: 50px;
+}
+
+table {
+	background-color: rgb(240,240,240);
+	border-radius: 5px;
+}
+
+
+input {
+	width: 70px;
+}
+
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+
+
+		/*TEAMS*/
+
+.teams {
+	background-color: rgb(192,192,192);
+	padding: 10px;
+	width: 200px;
+}
+
+.teams h2 {
+	width: 100px;
+}
+
+.teams ul {
+	list-style-type: none;
+}
+
+.teams button {
+	margin-left: 40px;
+}
+
+		/*WEDSTRIJDEN*/
+
+.wedstrijden {
+	background-color: rgb(224,224,224);
+	padding: 10px;
+	width: 600px;
+}
+
+.wedstrijden h2{
+	width: 480px;
+}
+
+.wedstrijden table {
+	border: 1px solid black;
+	margin: 0px 50px 14px 50px;
+	width: 500px;
+}
+
+.wedstrijden th,
+.wedstrijden td {
+	padding: 5px;
+	text-align: center;
+}
+
+.wedstrijden th {
+	font-size: 1.5rem;
+}
+
+.tteams {
+	font-weight: bold;
+}
+
+.wedstrijden button {
+	margin-left: 50px;
+	margin-bottom: 20px;
+}
+
+.wedstrijdenschema button {
+	margin-top: 5px;
+	margin-bottom: 0px;
+	width: 500px;
+}
+
+.wedstrijden input {
+	width: 15px;
+	text-align: center;
+}
+
+		/*STAND*/
+
+.stand {
+	background-color: rgb(192,192,192);
+	padding: 10px;
+	width: 450px;
+}
+
+.stand h2 {
+	width: 330px;
+}
+
+.stand table {
+	display: inline-block;
+	border: 1px solid black;
+	
+	text-align: left;
+}
+.standschema {
+	margin: 52.43px 50px;
+	width: 360px;
+}
+
+#tablePlaats {
+	width: 30px;
+}
+
+#tableStand {
+	width: 317px;
+}
+
+#tableStand td {
+	padding-right: 20px;
+}
+
+		/*CONTACT-HOME-BUTTON*/
+
+.contact-btn {
+	float: left;
+	margin-top: 30px;
+	margin-left: 30px;
+}
+
+.contact-btn a:active {
+	position: relative;
+	bottom: -2px;
+}
+
+.contact-btn a {
+	color: white;
+	margin-right: 30px;
+	padding: 8px 18px;
+	border: 1px solid white;
+	border-radius: 5px;
+}
+
+.contact-btn a:hover {
+	background-color: rgb(255, 191, 128);
+}
+
+		/*CONTACTGEGEVENS*/
+		
+.contactpage {
+	background-color: rgb(192,192,192);
+	padding: 10px;
+	width: 600px;
+}
+
+.contactpage h2 {
+	width: 480px;
+}
+
+.contactlist ul {
+	list-style-type: none;
+}
+
+.contactlist img {
+	height: 25px;
+	width; 25px;
+}
+		/*CopyRight*/
+
+.copyright {
+	color: white;
+	float: left;
+	margin-left: 30px;
+	padding : 8px 18px;
+}

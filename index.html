@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Squash Competitie</title>
+		<link href="style.css" type="text/css" rel="stylesheet">
+		<script src="script.js"></script>
+	</head>
+	
+	<body>
+	
+<!--	TITELBALK	-->
+
+		<div class="contact-btn">
+			<a href="./contact.html">Contact</a>
+		</div>
+		
+		<header>
+			<div></div>
+			<h1>Squash Competitie</h1>
+		</header>
+    
+		<div class='container'>
+
+<!--	TEAMS 		-->
+
+			<div class='teams'>
+				<a class='teamstitel'><h2>Teams</h2></a>
+				<button onclick="editTeam()" id="buttonTeam">Opslaan</button>
+				<ul>
+					<li>
+						<h3><input type="text" maxlength="20" id="name_tA" placeholder="Team A"></h3>
+						<ol>
+							<li><input type="text" maxlength="20" id="name_tAs1" placeholder="Speler A1"></li>
+							<li><input type="text" maxlength="20" id="name_tAs2" placeholder="Speler A2"></li>
+							<li><input type="text" maxlength="20" id="name_tAs3" placeholder="Speler A3"></li>
+							<li><input type="text" maxlength="20" id="name_tAs4" placeholder="Speler A4"></li>
+						</ol>
+					</li>
+					<li><h3><input type="text" maxlength="20" id="name_tB" placeholder="Team B"></h3>
+						<ol>
+							<li><input type="text" maxlength="20" id="name_tBs1" placeholder="Speler B1"></li>
+							<li><input type="text" maxlength="20" id="name_tBs2" placeholder="Speler B2"></li>
+							<li><input type="text" maxlength="20" id="name_tBs3" placeholder="Speler B3"></li>
+							<li><input type="text" maxlength="20" id="name_tBs4" placeholder="Speler B4"></li>
+						</ol>
+					</li>
+					<li><h3><input type="text" maxlength="20" id="name_tC" placeholder="Team C"></h3>
+						<ol>
+							<li><input type="text" maxlength="20" id="name_tCs1" placeholder="Speler C1"></li>
+							<li><input type="text" maxlength="20" id="name_tCs2" placeholder="Speler C2"></li>
+							<li><input type="text" maxlength="20" id="name_tCs3" placeholder="Speler C3"></li>
+							<li><input type="text" maxlength="20" id="name_tCs4" placeholder="Speler C4"></li>
+						</ol>
+					</li>
+					<li><h3><input type="text" maxlength="20" id="name_tD" placeholder="Team D"></h3>
+						<ol>
+							<li><input type="text" maxlength="20" id="name_tDs1" placeholder="Speler D1"></li>
+							<li><input type="text" maxlength="20" id="name_tDs2" placeholder="Speler D2"></li>
+							<li><input type="text" maxlength="20" id="name_tDs3" placeholder="Speler D3"></li>
+							<li><input type="text" maxlength="20" id="name_tDs4" placeholder="Speler D4"></li>
+						</ol>
+					</li>
+				</ul>
+			</div>
+
+<!--	WEDSTRIJDEN 	-->
+
+			<div class='wedstrijden'>
+				<h2>Wedstrijden</h2>
+				<button onclick="editScore()" id="buttonScore">Opslaan</button>
+				<div class="wedstrijdenschema">
+					<button onclick="wedTabelKnop('1')"><h3>2 februari 2018</h3></button>
+					<div  id="wedTabel1">
+						<table>
+							<tbody>
+								<tr class="tteams">
+									<td></td>
+									<td class="teama">Team A</td>
+									<td id="g1tA">0</td>
+									<td>-</td>
+									<td id="g1tB">0</td>
+									<td class="teamb">Team B</td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td class="tAs1">Speler A</td>
+									<td><input type="text" maxlength="1" id="g1tAs1" value="0" min="0" max="3"></td>
+									<td>-</td>
+									<td><input type="text" maxlength="1" id="g1tBs1" value="0"></td>
+									<td class="tBs1">Speler B</td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td class="tAs2">Speler A</td>
+									<td><input type="text" maxlength="1" id="g1tAs2" value="0"></td>
+									<td>-</td>
+									<td><input type="text" maxlength="1" id="g1tBs2" value="0"></td>
+									<td class="tBs2">Speler B</td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td class="tAs3">Speler A</td>
+									<td><input type="text" maxlength="1" id="g1tAs3" value="0"></td>
+									<td>-</td>
+									<td><input type="text" maxlength="1" id="g1tBs3" value="0"></td>
+									<td class="tBs3">Speler B</td>
+								</tr>
+								<tr>
+									<td>4</td>
+									<td class="tAs4">Speler A</td>
+									<td><input type="text" maxlength="1" id="g1tAs4" value="0"></td>
+									<td>-</td>
+									<td><input type="text" maxlength="1" id="g1tBs4" value="0"></td>
+									<td class="tBs4">Speler B</td>
+								</tr>
+								<tr>
+									<td></td>
+								</tr>
+								<tr class="tteams">
+									<td></td>
+									<td class="teamc">Team C</td>
+									<td id="g1tC">0</td>
+									<td>-</td>
+									<td id="g1tD">0</td>
+									<td class="teamd">Team D</td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td class="tCs1">Speler C</td>
+									<td><input type="text" maxlength="1" id="g1tCs1" value="0"></td>
+									<td>-</td>
+									<td><input type="text" maxlength="1" id="g1tDs1" value="0"></td>
+									<td class="tDs1">Speler D</td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td class="tCs2">Speler C</td>
+									<td><input type="text" maxlength="1" id="g1tCs2" value="0"></td>
+									<td>-</td>
+									<td><input type="text" maxlength="1" id="g1tDs2" value="0"></td>
+									<td class="tDs2">Speler D</td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td class="tCs3">Speler C</td>
+									<td><input type="text" maxlength="1" id="g1tCs3" value="0"></td>
+									<td>-</td>
+									<td><input type="text" maxlength="1" id="g1tDs3" value="0"></td>
+									<td class="tDs3">Speler D</td>
+								</tr>
+								<tr>
+									<td>4</td>
+									<td class="tCs4">Speler C</td>
+									<td><input type="text" maxlength="1" id="g1tCs4" value="0"></td>
+									<td>-</td>
+									<td><input type="text" maxlength="1" id="g1tDs4" value="0"></td>
+									<td class="tDs4">Speler D</td>
+								</tr>
+								<tr>
+									<td></td>
+								</tr>
+								<tr class="tteams">
+									<td></td>
+									<td class="teama">Team A</td>
+									<td id="g2tA">0</td>
+									<td>-</td>
+									<td id="g2tC">0</td>
+									<td class="teamc">Team C</td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td class="tAs1">Speler A</td>
+									<td><input type="text" maxlength="1" id="g2tAs1" value="0"></td>
+									<td>-</td>
+									<td><input type="text" maxlength="1" id="g2tCs1" value="0"></td>
+									<td class="tCs1">Speler C</td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td class="tAs2">Speler A</td>
+									<td><input type="text" maxlength="1" id="g2tAs2" value="0"></td>
+									<td>-</td>
+									<td><input type="text" maxlength="1" id="g2tCs2" value="0"></td>
+									<td class="tCs2">Speler C</td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td class="tAs3">Speler A</td>
+									<td><input type="text" maxlength="1" id="g2tAs3" value="0"></td>
+									<td>-</td>
+									<td><input type="text" maxlength="1" id="g2tCs3" value="0"></td>
+									<td class="tCs3">Speler C</td>
+								</tr>
+								<tr>
+									<td>4</td>
+									<td class="tAs4">Speler A</td>
+									<td><input type="text" maxlength="1" id="g2tAs4" value="0"></td>
+									<td>-</td>
+									<td><input type="text" maxlength="1" id="g2tCs4" value="0"></td>
+									<td class="tCs4">Speler C</td>
+								</tr>
+								<tr>
+									<td></td>
+								</tr>
+								<tr class="tteams">
+									<td></td>
+									<td class="teamb">Team B</td>
+									<td id="g2tB">0</td>
+									<td>-</td>
+									<td id="g2tD">0</td>
+									<td class="teamd">Team D</td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td class="tBs1">Speler B</td>
+									<td><input type="text" maxlength="1" id="g2tBs1" value="0"></td>
+									<td>-</td>
+									<td><input type="text" maxlength="1" id="g2tDs1" value="0"></td>
+									<td class="tDs1">Speler D</td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td class="tBs2">Speler B</td>
+									<td><input type="text" maxlength="1" id="g2tBs2" value="0"></td>
+									<td>-</td>
+									<td><input type="text" maxlength="1" id="g2tDs2" value="0"></td>
+									<td class="tDs2">Speler D</td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td class="tBs3">Speler B</td>
+									<td><input type="text" maxlength="1" id="g2tBs3" value="0"></td>
+									<td>-</td>
+									<td><input type="text" maxlength="1" id="g2tDs3" value="0"></td>
+									<td class="tDs3">Speler D</td>
+								</tr>
+								<tr>
+									<td>4</td>
+									<td class="tBs4">Speler B</td>
+									<td><input type="text" maxlength="1" id="g2tBs4" value="0"></td>
+									<td>-</td>
+									<td><input type="text" maxlength="1" id="g2tDs4" value="0"></td>
+									<td class="tDs4">Speler D</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					
+					<button onclick="wedTabelKnop('2')"><h3>9 maart 2018</h3></button>
+					<div  id="wedTabel2">
+						<table>
+							<tbody>
+								<tr class="tteams">
+									<td></td>
+									<td class="teama">Team A</td>
+									<td id="g3tA">0</td>
+									<td>-</td>
+									<td id="g3tD">0</td>
+									<td class="teamd">Team D</td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td class="tAs1">Speler A</td>
+									<td><input type="text" maxlength="1" id="g3tAs1" value="0"></td>
+									<td>-</td>
+									<td><input type="text" maxlength="1" id="g3tDs1" value="0"></td>
+									<td class="tDs1">Speler D</td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td class="tAs2">Speler A</td>
+									<td><input type="text" maxlength="1" id="g3tAs2" value="0"></td>
+									<td>-</td>
+									<td><input type="text" maxlength="1" id="g3tDs2" value="0"></td>
+									<td class="tDs2">Speler D</td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td class="tAs3">Speler A</td>
+									<td><input type="text" maxlength="1" id="g3tAs3" value="0"></td>
+									<td>-</td>
+									<td><input type="text" maxlength="1" id="g3tDs3" value="0"></td>
+									<td class="tDs3">Speler D</td>
+								</tr>
+								<tr>
+									<td>4</td>
+									<td class="tAs4">Speler A</td>
+									<td><input type="text" maxlength="1" id="g3tAs4" value="0"></td>
+									<td>-</td>
+									<td><input type="text" maxlength="1" id="g3tDs4" value="0"></td>
+									<td class="tDs4">Speler D</td>
+								</tr>
+								<tr>
+									<td></td>
+								</tr>
+								<tr class="tteams">
+									<td></td>
+									<td class="teamb">Team B</td>
+									<td id="g3tB">0</td>
+									<td>-</td>
+									<td id="g3tC">0</td>
+									<td class="teamc">Team C</td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td class="tBs1">Speler B</td>
+									<td><input type="text" maxlength="1" id="g3tBs1" value="0"></td>
+									<td>-</td>
+									<td><input type="text" maxlength="1" id="g3tCs1" value="0"></td>
+									<td class="tCs1">Speler C</td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td class="tBs2">Speler B</td>
+									<td><input type="text" maxlength="1" id="g3tBs2" value="0"></td>
+									<td>-</td>
+									<td><input type="text" maxlength="1" id="g3tCs2" value="0"></td>
+									<td class="tCs2">Speler C</td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td class="tBs3">Speler B</td>
+									<td><input type="text" maxlength="1" id="g3tBs3" value="0"></td>
+									<td>-</td>
+									<td><input type="text" maxlength="1" id="g3tCs3" value="0"></td>
+									<td class="tCs3">Speler C</td>
+								</tr>
+								<tr>
+									<td>4</td>
+									<td class="tBs4">Speler B</td>
+									<td><input type="text" maxlength="1" id="g3tBs4" value="0"></td>
+									<td>-</td>
+									<td><input type="text" maxlength="1" id="g3tCs4" value="0"></td>
+									<td class="tCs4">Speler C</td>
+								</tr>
+								<tr>
+									<td></td>
+								</tr>
+								<tr class="tteams">
+									<td></td>
+									<td class="teama">Team A</td>
+									<td id="g4tA">0</td>
+									<td>-</td>
+									<td id="g4tB">0</td>
+									<td class="teamb">Team B</td>
+								</tr>
+								<tr >
+									<td>1</td>
+									<td class="tAs1">Speler A</td>
+									<td><input type="text" maxlength="1" id="g4tAs1" value="0"></td>
+									<td>-</td>
+									<td><input type="text" maxlength="1" id="g4tBs1" value="0"></td>
+									<td class="tBs1">Speler B</td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td class="tAs2">Speler A</td>
+									<td><input type="text" maxlength="1" id="g4tAs2" value="0"></td>
+									<td>-</td>
+									<td><input type="text" maxlength="1" id="g4tBs2" value="0"></td>
+									<td class="tBs2">Speler B</td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td class="tAs3">Speler A</td>
+									<td><input type="text" maxlength="1" id="g4tAs3" value="0"></td>
+									<td>-</td>
+									<td><input type="text" maxlength="1" id="g4tBs3" value="0"></td>
+									<td class="tBs3">Speler B</td>
+								</tr>
+								<tr>
+									<td>4</td>
+									<td class="tAs4">Speler A</td>
+									<td><input type="text" maxlength="1" id="g4tAs4" value="0"></td>
+									<td>-</td>
+									<td><input type="text" maxlength="1" id="g4tBs4" value="0"></td>
+									<td class="tBs4">Speler B</td>
+								</tr>
+								<tr>
+									<td></td>
+								</tr>
+								<tr class="tteams">
+									<td></td>
+									<td class="teamc">Team C</td>
+									<td id="g4tC">0</td>
+									<td>-</td>
+									<td id="g4tD">0</td>
+									<td class="teamd">Team D</td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td class="tCs1">Speler C</td>
+									<td><input type="text" maxlength="1" id="g4tCs1" value="0"></td>
+									<td>-</td>
+									<td><input type="text" maxlength="1" id="g4tDs1" value="0"></td>
+									<td class="tDs1">Speler D</td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td class="tCs2">Speler C</td>
+									<td><input type="text" maxlength="1" id="g4tCs2" value="0"></td>
+									<td>-</td>
+									<td><input type="text" maxlength="1" id="g4tDs2" value="0"></td>
+									<td class="tDs2">Speler D</td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td class="tCs3">Speler C</td>
+									<td><input type="text" maxlength="1" id="g4tCs3" value="0"></td>
+									<td>-</td>
+									<td><input type="text" maxlength="1" id="g4tDs3" value="0"></td>
+									<td class="tDs3">Speler D</td>
+								</tr>
+								<tr>
+									<td>4</td>
+									<td class="tCs4">Speler C</td>
+									<td><input type="text" maxlength="1" id="g4tCs4" value="0"></td>
+									<td>-</td>
+									<td><input type="text" maxlength="1" id="g4tDs4" value="0"></td>
+									<td class="tDs4">Speler D</td>
+								</tr>
+								
+							</tbody>
+							
+						</table>
+					</div>
+					
+					<button onclick="wedTabelKnop('3')"><h3>20 april 2018</h3></button>
+					<div  id="wedTabel3">
+						<table>
+							<tbody>
+								<tr class="tteams">
+									<td></td>
+									<td class="teama">Team A</td>
+									<td id="g5tA">0</td>
+									<td>-</td>
+									<td id="g5tC">0</td>
+									<td class="teamc">Team C</td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td class="tAs1">Speler A</td>
+									<td><input type="text" maxlength="1" id="g5tAs1" value="0"></td>
+									<td>-</td>
+									<td><input type="text" maxlength="1" id="g5tCs1" value="0"></td>
+									<td class="tCs1">Speler C</td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td class="tAs2">Speler A</td>
+									<td><input type="text" maxlength="1" id="g5tAs2" value="0"></td>
+									<td>-</td>
+									<td><input type="text" maxlength="1" id="g5tCs2" value="0"></td>
+									<td class="tCs2">Speler C</td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td class="tAs3">Speler A</td>
+									<td><input type="text" maxlength="1" id="g5tAs3" value="0"></td>
+									<td>-</td>
+									<td><input type="text" maxlength="1" id="g5tCs3" value="0"></td>
+									<td class="tCs3">Speler C</td>
+								</tr>
+								<tr>
+									<td>4</td>
+									<td class="tAs4">Speler A</td>
+									<td><input type="text" maxlength="1" id="g5tAs4" value="0"></td>
+									<td>-</td>
+									<td><input type="text" maxlength="1" id="g5tCs4" value="0"></td>
+									<td class="tCs4">Speler C</td>
+								</tr>
+								<tr>
+									<td></td>
+								</tr>
+								<tr class="tteams">
+									<td></td>
+									<td class="teamb">Team B</td>
+									<td id="g5tB">0</td>
+									<td>-</td>
+									<td id="g5tD">0</td>
+									<td class="teamd">Team D</td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td class="tBs1">Speler B</td>
+									<td><input type="text" maxlength="1" id="g5tBs1" value="0"></td>
+									<td>-</td>
+									<td><input type="text" maxlength="1" id="g5tDs1" value="0"></td>
+									<td class="tDs1">Speler D</td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td class="tBs2">Speler B</td>
+									<td><input type="text" maxlength="1" id="g5tBs2" value="0"></td>
+									<td>-</td>
+									<td><input type="text" maxlength="1" id="g5tDs2" value="0"></td>
+									<td class="tDs2">Speler D</td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td class="tBs3">Speler B</td>
+									<td><input type="text" maxlength="1" id="g5tBs3" value="0"></td>
+									<td>-</td>
+									<td><input type="text" maxlength="1" id="g5tDs3" value="0"></td>
+									<td class="tDs3">Speler D</td>
+								</tr>
+								<tr>
+									<td>4</td>
+									<td class="tBs4">Speler B</td>
+									<td><input type="text" maxlength="1" id="g5tBs4" value="0"></td>
+									<td>-</td>
+									<td><input type="text" maxlength="1" id="g5tDs4" value="0"></td>
+									<td class="tDs4">Speler D</td>
+								</tr>
+								<tr>
+									<td></td>
+								</tr>
+								<tr class="tteams">
+									<td></td>
+									<td class="teama">Team A</td>
+									<td id="g6tA">0</td>
+									<td>-</td>
+									<td id="g6tD">0</td>
+									<td class="teamd">Team D</td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td class="tAs1">Speler A</td>
+									<td><input type="text" maxlength="1" id="g6tAs1" value="0"></td>
+									<td>-</td>
+									<td><input type="text" maxlength="1" id="g6tDs1" value="0"></td>
+									<td class="tDs1">Speler D</td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td class="tAs2">Speler A</td>
+									<td><input type="text" maxlength="1" id="g6tAs2" value="0"></td>
+									<td>-</td>
+									<td><input type="text" maxlength="1" id="g6tDs2" value="0"></td>
+									<td class="tDs2">Speler D</td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td class="tAs3">Speler A</td>
+									<td><input type="text" maxlength="1" id="g6tAs3" value="0"></td>
+									<td>-</td>
+									<td><input type="text" maxlength="1" id="g6tDs3" value="0"></td>
+									<td class="tDs3">Speler D</td>
+								</tr>
+								<tr>
+									<td>4</td>
+									<td class="tAs4">Speler A</td>
+									<td><input type="text" maxlength="1" id="g6tAs4" value="0"></td>
+									<td>-</td>
+									<td><input type="text" maxlength="1" id="g6tDs4" value="0"></td>
+									<td class="tDs4">Speler D</td>
+								</tr>
+								<tr>
+									<td></td>
+								</tr>
+								<tr class="tteams">
+									<td></td>
+									<td class="teamb">Team B</td>
+									<td id="g6tB">0</td>
+									<td>-</td>
+									<td id="g6tC">0</td>
+									<td class="teamc">Team C</td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td class="tBs1">Speler B</td>
+									<td><input type="text" maxlength="1" id="g6tBs1" value="0"></td>
+									<td>-</td>
+									<td><input type="text" maxlength="1" id="g6tCs1" value="0"></td>
+									<td class="tCs1">Speler C</td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td class="tBs2">Speler B</td>
+									<td><input type="text" maxlength="1" id="g6tBs2" value="0"></td>
+									<td>-</td>
+									<td><input type="text" maxlength="1" id="g6tCs2" value="0"></td>
+									<td class="tCs2">Speler C</td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td class="tBs3">Speler B</td>
+									<td><input type="text" maxlength="1" id="g6tBs3" value="0"></td>
+									<td>-</td>
+									<td><input type="text" maxlength="1" id="g6tCs3" value="0"></td>
+									<td class="tCs3">Speler C</td>
+								</tr>
+								<tr>
+									<td>4</td>
+									<td class="tBs4">Speler B</td>
+									<td><input type="text" maxlength="1" id="g6tBs4" value="0"></td>
+									<td>-</td>
+									<td><input type="text" maxlength="1" id="g6tCs4" value="0"></td>
+									<td class="tCs4">Speler C</td>
+								</tr>
+								
+							</tbody>
+							
+						</table>
+					</div>
+				</div>
+			</div>
+
+<!--	STAND 		-->
+
+			<div class='stand'>
+				<h2>Stand</h2>
+				<div class="standschema">
+					<table id="tablePlaats">
+						<thead>
+							<tr>
+								<th>Pl.</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>1</td>
+							</tr>
+							<tr>
+								<td>2</td>
+							</tr>
+							<tr>
+								<td>3</td>
+							</tr>
+							<tr>
+								<td>4</td>
+							</tr>
+						</tbody>
+					</table>
+					<table id="tableStand">
+						<thead>
+							<tr>
+								<th>Team</th>
+								<th>Pnt.</th>
+								<!--<th>Sld.</th>-->
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td id="tableTeamName1">Team</td>
+								<td id="totaalPunten1">0</td>
+								<!--<td id="saldo1">0</td>-->
+							</tr>
+							<tr>
+								<td id="tableTeamName2">Team</td>
+								<td id="totaalPunten2">0</td>
+								<!--<td id="saldo2">0</td>-->
+							</tr>
+							<tr>
+								<td id="tableTeamName3">Team</td>
+								<td id="totaalPunten3">0</td>
+								<!--<td id="saldo3">0</td>-->
+							</tr>
+							<tr>
+								<td id="tableTeamName4">Team</td>
+								<td id="totaalPunten4">0</td>
+								<!--<td id="saldo4">0</td>-->
+							</tr>
+						</tbody>
+					</table>
+					
+				</div>
+				
+			</div>
+			
+		</div>
+
+<!--	FOOTER 		-->
+
+		<footer>			
+			<div class="copyright">&copy Martin Velthuis 2018
+			</div>
+		</footer>
+			  
+	</body>
+</html>
